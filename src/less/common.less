@@ -1,7 +1,10 @@
 @font-color: #333;
+@body-min-width: 720px;
 
 body {
+  min-width: @body-min-width;
   color: @font-color;
+  background-color: #eee;
 }
 
 ul {
@@ -9,3 +12,105 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+header {
+  min-width: @body-min-width;
+  width: 100%;
+  height: 154px;
+  background-color: #fff;
+}
+
+@header-top-height: 80px;
+
+.header-top {
+  height: @header-top-height;
+  border-bottom: solid 1px #f3f3f3;
+  text-align: center;
+}
+
+.header-logo {
+  position: relative;
+  display: inline-block;
+  line-height: @header-top-height;
+  cursor: pointer;
+}
+
+.header-account {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px 30px 10px 10px;
+  font-size: 16px;
+  line-height: 130%;
+  cursor: pointer;
+}
+
+@header-nav-height: 74px;
+
+.header-nav {
+  width: 720px;
+  height: @header-nav-height;
+  margin: 0 auto;
+  border-bottom: solid 1px #eee;
+  line-height: @header-nav-height;
+
+}
+
+.header-nav-container {
+  height: 68px;
+  margin-bottom: 6px;
+  padding: 20px 0;
+}
+
+.header-nav > li {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header-nav img {
+  vertical-align: top;
+}
+
+.header-nav-container .line { // .header-nav-container 안에 포함시켜야.
+  position: absolute;
+  display: none;
+  bottom: 0; // .line 을 아래에 붙이기 위해 bottom 을 0으로 설정.
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #ffd200;
+}
+
+.header-nav-container .line.active {
+  display: block;
+}
+
+@footer-line-height: 24px;
+
+footer {
+  width: 100%;
+  height: 186px;
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+.footer-policy {
+  width: 315px;
+  margin: 0 auto;
+  padding-top: 60px;
+  line-height: @footer-line-height;
+}
+
+.footer-policy li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.footer-copyright {
+  margin-top: 9px;
+  text-align: center;
+  line-height: @footer-line-height;
+}
+
