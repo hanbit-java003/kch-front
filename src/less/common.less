@@ -1,7 +1,9 @@
 @font-color: #666;
+@header-height: 154px;
 @body-min-width: 720px;
 
 body {
+  padding-top: @header-height;
   min-width: @body-min-width;
   color: @font-color;
   background-color: #eee;
@@ -14,9 +16,12 @@ ul {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
   min-width: @body-min-width;
   width: 100%;
-  height: 154px;
+  height: @header-height;
   background-color: #fff;
 }
 
