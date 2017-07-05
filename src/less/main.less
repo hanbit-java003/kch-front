@@ -1,6 +1,7 @@
 @import 'common.less';
 
 @main-margin-top: 15px;
+@main-background-color: #fff;
 
 .main-contents {
   width: 720px;
@@ -9,4 +10,61 @@
 
 .main-banner {
   margin-top: @main-margin-top;
+}
+
+.main-suggest {
+  margin-top: @main-margin-top;
+  width: 100%;
+  height: 180px;
+  background-color: @main-background-color;
+}
+
+@head-box-height: 47px;
+
+.head-box {
+  height: @head-box-height;
+}
+
+.head-title {
+  display: inline-block;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: @head-box-height;
+}
+
+.head-count {
+  display: inline-block;
+  float: right;
+  padding-right: 15px;
+  color: #c7c7c7;
+  font-size: 17px;
+  line-height: @head-box-height;
+}
+
+.suggest-list {
+  height: 63px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.suggest-list > li {
+  display: inline-block;
+  width: 20%;
+  margin: 0 10px;
+  line-height: 46px;
+  font-size: 22px;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.head-more {
+  height: 70px;
+  padding: 25px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.head-more img {
+  width: 60px;
 }
