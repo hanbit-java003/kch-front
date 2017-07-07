@@ -2,7 +2,12 @@
     <div class="list">
         <div class="list-img">
             <img class="list-title-img" src="{{img}}">
-            <img class="badge-time" src="./img/badge-time.png">
+            {{#if kakaotoon}}
+            <img class="badge-kakao-toon" src="./img/badge-kakao-toon.png">
+            {{/if}}
+            {{#if daumtoon}}
+            <img class="badge-daum-toon" src="./img/badge-daum-toon.png">
+            {{/if}}
         </div>
         <ul class="list-text">
             <li class="list-title">

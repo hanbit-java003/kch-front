@@ -2,6 +2,7 @@ require('bootstrap');
 require('../less/main.less');
 
 var waitFreeToon = require('./model/waitfree-toon');
+var bestToon = require('./model/best-toon');
 
 function initWaitFreeToon(waitFreeToon) {
     $('.waitfree-toon').empty();
@@ -14,4 +15,31 @@ function initWaitFreeToon(waitFreeToon) {
     }
 }
 
+function initBestToon(bestToon) {
+    $('.best-toon').empty();
+    var template = require('../template/main/best-toon.hbs');
+
+    for (var i=0; i<bestToon.length; i++) {
+        var html = template(bestToon[i]);
+
+        $('.best-toon').append(html);
+    }
+}
+
 initWaitFreeToon(waitFreeToon);
+initBestToon(bestToon);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
