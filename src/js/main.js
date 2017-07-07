@@ -1,11 +1,17 @@
 require('bootstrap');
 require('../less/main.less');
-var hello = require('./sample/hello');
 
-$('.say-hello').on('click', function() {
-    alert(hello.hello($('#txt-hello').val()));
-});
+var waitFreeToon = require('./model/waitfree-toon');
 
-$('.goto-sub').on('click', function() {
-    location.href = 'sub.html';
-});
+function initWaitFreeToon(waitFreeToon) {
+    $('.waitfree-toon').empty();
+    var template = require('../template/main/waitfree-toon.hbs');
+
+    for (var i=0; i<waitFreeToon.length; i++) {
+        var html = template(waitFreeToon[i]);
+
+        $('.waitfree-toon').append(html);
+    }
+}
+
+initWaitFreeToon(waitFreeToon);

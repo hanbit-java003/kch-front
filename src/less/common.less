@@ -3,7 +3,7 @@
 @body-min-width: 720px;
 
 body {
-  padding-top: 60px;
+  padding-top: 154px;
   min-width: @body-min-width;
   color: @font-color;
   background-color: #eee;
@@ -51,15 +51,18 @@ header {
   cursor: pointer;
 }
 
+.header-menu {
+  width: 100%;
+  border-bottom: solid 1px #eeeeee;
+}
+
 @header-nav-height: 74px;
 
 .header-nav {
   width: 720px;
   height: @header-nav-height;
   margin: 0 auto;
-  border-bottom: solid 1px #eee;
   line-height: @header-nav-height;
-
 }
 
 .header-nav-container {
@@ -73,7 +76,6 @@ header {
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  border-bottom: solid 15px @body-background-color;
 }
 
 .header-nav img {

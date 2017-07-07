@@ -9,8 +9,17 @@
 }
 
 .main-banner {
+  position: relative;
+  height: 360px;
   margin-top: @main-margin-top;
   cursor: pointer;
+  overflow: hidden;
+}
+
+.main-banner img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .main-suggest {
@@ -145,12 +154,14 @@
   width: 34px;
 }
 
-.age-grade {
-  width: 19px;
+.badge-up, .badge-new {
+  padding-top: 2px;
+  vertical-align: top;
 }
 
-.badge-up, .badge-new, .age-grade {
-  padding-top: 2px;
+.age-grade {
+  width: 19px;
+  padding-top: 1px;
   vertical-align: top;
 }
 
