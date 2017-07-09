@@ -1,0 +1,28 @@
+<li>
+    <div class="list">
+        <div class="list-img">
+            <img class="list-title-img" src="{{img}}">
+            <img class="badge-time" src="./img/badge-time.png">
+        </div>
+        <ul class="list-text">
+            <li class="list-title">
+                {{#if up}}
+                <img class="badge-up" src="./img/badge-up.png">
+                {{/if}}
+                {{#if new}}
+                <img class="badge-new" src="./img/badge-new.png">
+                {{/if}}
+                {{#if agelimit}}
+                <img class="age-grade" src="./img/age-grade-15.png">
+                {{/if}}
+                {{title}}
+            </li>
+            <li class="list-summary">
+                {{summary}}
+            </li>
+            <li class="list-info">
+                {{views}}만 · {{writer}}
+            </li>
+        </ul>
+    </div>
+</li>

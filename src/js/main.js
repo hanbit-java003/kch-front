@@ -3,6 +3,8 @@ require('../less/main.less');
 
 var waitFreeToon = require('./model/waitfree-toon');
 var bestToon = require('./model/best-toon');
+var waitFreeNovel = require('./model/waitfree-novel');
+var bestNovel = require('./model/best-novel');
 
 function initWaitFreeToon(waitFreeToon) {
     $('.waitfree-toon').empty();
@@ -26,9 +28,32 @@ function initBestToon(bestToon) {
     }
 }
 
+function initWaitFreeNovel(waitFreeNovel) {
+    $('.waitfree-novel').empty();
+    var template = require('../template/main/waitfree-novel.hbs');
+
+    for (i=0; i<waitFreeNovel.length; i++) {
+        var html = template(waitFreeNovel[i]);
+
+        $('.waitfree-novel').append(html);
+    }
+}
+
+function initBestNovel(bestNovel) {
+    $('.best-novel').empty();
+    var template = require('../template/main/best-novel.hbs');
+
+    for (i=0; i<bestNovel.length; i++) {
+        var html = template(bestNovel[i]);
+
+        $('.best-novel').append(html);
+    }
+}
+
 initWaitFreeToon(waitFreeToon);
 initBestToon(bestToon);
-
+initWaitFreeNovel(waitFreeNovel);
+initBestNovel(bestNovel);
 
 
 
