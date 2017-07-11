@@ -1,6 +1,8 @@
 require('bootstrap');
 require('../less/main.less');
 
+var common = require('./common');
+
 var waitFreeToon = require('./model/waitfree-toon');
 var bestToon = require('./model/best-toon');
 var waitFreeNovel = require('./model/waitfree-novel');
