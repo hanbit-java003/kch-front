@@ -6,6 +6,11 @@ $('.header-account').on('click', function () {
 
     $('body').append(account);
 
+    $('.account-sign-toggle').on('click', function () {
+        $('.aside-sign-up').toggle();
+        $('.aside-sign-in').toggle();
+    });
+
     $('.aside-account').animate({
         right: '0'
     }, {
