@@ -31,3 +31,9 @@ $('.header-account').on('click', function () {
         }
     });
 });
+
+$('.header-nav > li').on('click', function () {
+
+    $(this).parent('.header-nav').find('li').removeClass('active');
+
+});
