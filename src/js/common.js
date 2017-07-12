@@ -33,7 +33,13 @@ $('.header-account').on('click', function () {
 });
 
 $('.header-nav > li').on('click', function () {
+    if ($(this).hasClass('active')) {
+        return;
+    }
+    var navIndex = $(this).index();
 
-    $(this).parent('.header-nav').find('li').removeClass('active');
+    var navBtns = $(this).parent('.header-nav').find('span');
+    navBtns.removeClass('active');
+    $(navBtns[navIndex]).addClass('active');
 
 });
