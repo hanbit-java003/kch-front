@@ -1,4 +1,4 @@
-$('.header-account').on('click', function () {
+$('.header-account').on('click', function () { // side-bar
     $('body').append('<div class="darklayer"></div>'); // aside-account 가 나왔을 때 body 마우스 클릭 방지.
     $('body').css('overflow', 'hidden'); // 스크롤 없앰.
 
@@ -32,7 +32,7 @@ $('.header-account').on('click', function () {
     });
 });
 
-$('.header-nav > li').on('click', function () {
+$('.header-nav > li').on('click', function () { // nav-button active
     if ($(this).hasClass('active')) {
         return;
     }
