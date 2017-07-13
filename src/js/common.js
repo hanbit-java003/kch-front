@@ -1,3 +1,27 @@
+$('.header-logo').on('click', function () {
+    location.href = './';
+});
+
+$('.header-nav > li').on('click', function () {
+
+    var navId = $(this).attr('nav-id');
+
+    location.href = './' + navId + '.html';
+});
+
+$('.header-nav > li').on('click', function () { // nav-button active
+
+    if ($(this).hasClass('active')) {
+        return;
+    }
+    var navIndex = $(this).index();
+
+    var navBtns = $(this).parent('.header-nav').find('span');
+    navBtns.removeClass('active');
+    $(navBtns[navIndex]).addClass('active');
+
+});
+
 $('.header-account').on('click', function () { // side-bar
     $('body').append('<div class="darklayer"></div>'); // aside-account 가 나왔을 때 body 마우스 클릭 방지.
     $('body').css('overflow', 'hidden'); // 스크롤 없앰.
@@ -32,14 +56,3 @@ $('.header-account').on('click', function () { // side-bar
     });
 });
 
-$('.header-nav > li').on('click', function () { // nav-button active
-    if ($(this).hasClass('active')) {
-        return;
-    }
-    var navIndex = $(this).index();
-
-    var navBtns = $(this).parent('.header-nav').find('span');
-    navBtns.removeClass('active');
-    $(navBtns[navIndex]).addClass('active');
-
-});

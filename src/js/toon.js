@@ -3,6 +3,8 @@ require('../less/toon.less');
 
 var common = require('./common');
 
+$('')
+
 $('.sub-menu > li').on('click', function () {
 
     if ($(this).hasClass('active')) {
