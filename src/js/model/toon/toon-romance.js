@@ -14,7 +14,7 @@ module.exports = [{
     writer: '여호경, 일월',
     img: './img/toon/toon-romance2.jpg',
     time: true,
-    up: true,
+    up: true
 }, {
     title: '일하고 싸우고 사랑하라[선연재]',
     summary: '유하진 작가의 강렬한 신작!',

@@ -34,6 +34,33 @@
   margin: 15px 0;
 }
 
+.sub-menu-day-webtoon {
+  width: 100%;
+  height: 74px;
+  margin-top: -15px;
+  padding: 10px 0;
+  background-color: #fff;
+  color: #bdbdbd;
+  font-size: 22px;
+  text-align: center;
+  line-height: 53px;
+  border-bottom: solid 1px #f3f3f3;
+}
+
+.sub-menu-day-webtoon > li {
+  display: inline-block;
+  width: calc(100% / 8);
+  cursor: pointer;
+}
+
+.sub-menu-day-webtoon > li.active {
+  background-image: url("../img/sub-menu-background.png");
+  background-size: 53px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #1e1e1e;
+}
+
 .sub-contents-list {
   height: 100%;
   padding: 10px 20px 10px 20px;
@@ -42,4 +69,12 @@
 
 .toon-waitfree > li .list:last-child {
   border-bottom: none;
+}
+
+.sub-contents > section {
+  display: none; // 기본적으로 안보이게 처리.
+}
+
+.sub-contents > section.active {
+  display: block; // active 클래스만 보이게 처리.
 }
