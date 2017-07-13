@@ -19,6 +19,7 @@ $('.sub-menu > li').on('click', function () {
 });
 
 var toonWaitFree =  require('./model/toon/toon-waitfree');
+var toonRomance = require('./model/toon/toon-romance');
 
 function initToonWaitFree(toonWaitFree) {
     $('.toon-waitfree').empty();
@@ -31,4 +32,16 @@ function initToonWaitFree(toonWaitFree) {
     }
 }
 
+function initToonRomance() {
+    $('.toon-romance').empty();
+    var template = require('../template/toon/toon-romance.hbs');
+
+    for (var i=0; i<toonRomance.length; i++) {
+        var html = template(toonRomance[i]);
+
+        $('.toon-romance').append(html);
+    }
+}
+
 initToonWaitFree(toonWaitFree);
+initToonRomance();
