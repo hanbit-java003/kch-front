@@ -3,7 +3,7 @@ module.exports = [{
     summary: '우리 서로의 곁에 있을 수 있을까?',
     views: '82.4',
     writer: '백혜경',
-    img: './img/toon/toon-romance/today01.png',
+    img: './img/toon/romance/today01.png',
     time: true,
     up: true,
     agelimit: true
@@ -12,7 +12,7 @@ module.exports = [{
     summary: '형사와 스타의 잘못된 만남',
     views: '56.2',
     writer: '여호경, 일월',
-    img: './img/toon/toon-romance/today02.jpg',
+    img: './img/toon/romance/today02.jpg',
     time: true,
     up: true
 }, {
@@ -20,7 +20,7 @@ module.exports = [{
     summary: '유하진 작가의 강렬한 신작!',
     views: '43.4',
     writer: '유하진',
-    img: './img/toon/toon-romance/today03.png',
+    img: './img/toon/romance/today03.png',
     time: true,
     up: true,
     agelimit: true
