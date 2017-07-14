@@ -1,12 +1,17 @@
-$('.sub-menu-day-webtoon > li').on('click', function () {
+$('.sub-menu-daily-webtoon > li').on('click', function () {
     if ($(this).hasClass('active')) {
         return;
     }
-    var subNavDayIndex = $(this).index();
+    var subNavDailyIndex = $(this).index();
 
-    var subNavDayBtns = $(this).parent('.sub-menu-day-webtoon').find('li');
-    subNavDayBtns.removeClass('active');
-    $(subNavDayBtns[subNavDayIndex]).addClass('active');
+    var subNavDailyBtns = $(this).parent('.sub-menu-daily-webtoon').find('li');
+    subNavDailyBtns.removeClass('active');
+    $(subNavDailyBtns[subNavDailyIndex]).addClass('active');
+
+    var dailyId = $(this).attr('daily-Id');
+
+    $('.daily-webtoon').hide();
+    $('.' + dailyId).show();
 });
 
 var toonWebtoonMon = require('./model/toon/webtoon/toon-webtoon-mon');
