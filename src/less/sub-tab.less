@@ -1,0 +1,41 @@
+@sub-menu-height: 70px;
+
+.sub-menu {
+  width: 100%;
+  height: @sub-menu-height;
+  margin-top: 15px;
+  background-color: #fff;
+  border-bottom: solid 1px #d9d9d9;
+  color: #bdbdbd;
+  font-size: 22px;
+}
+
+.sub-menu > li {
+  display: inline-block;
+  padding: 20px 0;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.sub-menu > li.active {
+  color: #262626;
+}
+
+.sub-contents-list {
+  height: 100%;
+  padding: 10px 20px 10px 20px;
+  background-color: #fff;
+}
+
+.sub-contents-list ul > li .list:last-child {
+  border-bottom: none;
+}
+
+.sub-contents > section {
+  display: none; // 기본적으로 안보이게 처리.
+}
+
+.sub-contents > section.active {
+  display: block; // active 클래스만 보이게 처리.
+}

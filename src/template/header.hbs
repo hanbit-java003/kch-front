@@ -9,7 +9,7 @@
         <ul class="header-nav">
             <li style="width: 12.5%" nav-id="index">
                 홈
-                <span class="line{{#if main}} active{{/if}}"></span>
+                <span class="line{{#if index}} active{{/if}}"></span>
             </li>
             <li style="width: 25%" nav-id="toon">
                 웹툰/만화
@@ -17,15 +17,15 @@
             </li>
             <li style="width: 25%" nav-id="novel">
                 웹소설/장르
-                <span class="line"></span>
+                <span class="line{{#if novel}} active{{/if}}"></span>
             </li>
             <li style="width: 25%" nav-id="literature">
                 문학/실용
-                <span class="line"></span>
+                <span class="line{{#if literature}} active{{/if}}"></span>
             </li>
             <li style="width: 12.5%" nav-id="sort">
                 #
-                <span class="line"></span>
+                <span class="line{{#if sort}} active{{/if}}"></span>
             </li>
         </ul>
     </div>
