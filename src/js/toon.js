@@ -3,24 +3,13 @@ require('../less/toon.less');
 
 var common = require('./common');
 var subTab = require('./sub-tab');
+var webtoon = require('./toon-webtoon');
 
-var toonWebtoonMon = require('./model/toon/toon-webtoon-mon');
 var toonWaitFree =  require('./model/toon/toon-waitfree');
 var toonRomance = require('./model/toon/toon-romance');
 var toonBoy = require('./model/toon/toon-boy');
 var toonDrama = require('./model/toon/toon-drama');
 var toonAction = require('./model/toon/toon-action');
-
-function initToonWebtoonMon(toonWebtoonMon) {
-    $('.toon-webtoon-mon').empty();
-    var template = require('../template/toon/toon-webtoon-mon.hbs');
-
-    for (var i=0; i<toonWebtoonMon.length; i++) {
-        var html = template(toonWebtoonMon[i]);
-
-        $('.toon-webtoon-mon').append(html);
-    }
-}
 
 function initToonWaitFree(toonWaitFree) {
     $('.toon-waitfree').empty();
@@ -77,20 +66,8 @@ function initToonAction(toonAction) {
     }
 }
 
-initToonWebtoonMon(toonWebtoonMon);
 initToonWaitFree(toonWaitFree);
 initToonRomance(toonRomance);
 initToonBoy(toonBoy);
 initToonDrama(toonDrama);
 initToonAction(toonAction);
-
-$('.sub-menu-day-webtoon > li').on('click', function () {
-    if ($(this).hasClass('active')) {
-        return;
-    }
-    var subNavDayIndex = $(this).index();
-
-    var subNavDayBtns = $(this).parent('.sub-menu-day-webtoon').find('li');
-    subNavDayBtns.removeClass('active');
-    $(subNavDayBtns[subNavDayIndex]).addClass('active');
-});
