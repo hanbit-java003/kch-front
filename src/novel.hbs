@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>카카오페이지, 웹소설/장르</title>
+</head>
+<body>
+{{> template/header novel="true" }}
+<div class="sub-contents">
+    <ul class="sub-menu">
+        <li style="width: 15%">
+            웹소설
+        </li>
+        <li style="width: 25%" class="active">
+            기다리면무료
+        </li>
+        <li style="width: 17%">
+            판타지
+        </li>
+        <li style="width: 13%">
+            무협
+        </li>
+        <li style="width: 17%">
+            로맨스
+        </li>
+        <li style="width: 13%">
+            로판
+        </li>
+    </ul>
+    <section class="sub-contents-novel sub-contents-novel-webnovel active">
+        <section class="sub-banner">
+            <img src="./img/novel/banner-novel-webnovel.png">
+        </section>
+        <ul class="sub-menu-daily-webnovel">
+            <li class="active">월</li>
+            <li>화</li>
+            <li>수</li>
+            <li>목</li>
+            <li>금</li>
+            <li>토</li>
+            <li>일</li>
+            <li>전체</li>
+        </ul>
+        <section class="sub-contents-list daily-webnovel-list">
+            <ul class="daily-webnovel novel-webnovel-mon active">
+            </ul>
+            <ul class="daily-webnovel novel-webnovel-tue">
+            </ul>
+            <ul class="daily-webnovel novel-webnovel-wed">
+            </ul>
+            <ul class="daily-webnovel novel-webnovel-thur">
+            </ul>
+            <ul class="daily-webnovel novel-webnovel-fri">
+            </ul>
+            <ul class="daily-webnovel novel-webnovel-sat">
+            </ul>
+            <ul class="daily-webnovel novel-webnovel-sun">
+            </ul>
+            <ul class="daily-webnovel novel-webnovel-all">
+            </ul>
+        </section>
+    </section>
+    <div class="appdownload">
+        <img src="./img/appDownload.png">
+    </div>
+</div>
+{{> template/footer }}
+</body>
+</html>

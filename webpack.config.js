@@ -16,6 +16,9 @@ const pages = [{
 }, {
     html: 'toon',
     script: 'toon',
+}, {
+    html: 'novel',
+    script: 'novel',
 }];
 
 module.exports = {

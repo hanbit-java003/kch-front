@@ -56,17 +56,3 @@ initWaitFreeToon(waitFreeToon);
 initBestToon(bestToon);
 initWaitFreeNovel(waitFreeNovel);
 initBestNovel(bestNovel);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
