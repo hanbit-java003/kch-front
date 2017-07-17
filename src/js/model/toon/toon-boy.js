@@ -12,7 +12,7 @@ module.exports = [{
     writer: '유야 칸자키',
     img: './img/toon/boy/recommend02.png',
     time: true,
-    agelimit: true
+    badge: ['age15']
 }, {
     title: '레이드',
     summary: '흙수저의 통쾌한 반란!',

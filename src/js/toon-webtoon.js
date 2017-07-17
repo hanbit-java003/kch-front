@@ -24,7 +24,7 @@ var toonWebtoonSun = require('./model/toon/webtoon/toon-webtoon-sun');
 
 function initToonWebtoonMon(toonWebtoonMon) {
     $('.toon-webtoon-mon').empty();
-    var template = require('../template/toon/toon-webtoon.hbs');
+    var template = require('../template/main/toon.hbs');
 
     for (var i=0; i<toonWebtoonMon.length; i++) {
         var html = template(toonWebtoonMon[i]);
@@ -35,7 +35,7 @@ function initToonWebtoonMon(toonWebtoonMon) {
 
 function initToonWebtoonTue(toonWebtoonTue) {
     $('.toon-webtoon-tue').empty();
-    var template = require('../template/toon/toon-webtoon.hbs');
+    var template = require('../template/main/toon.hbs');
 
     for (var i=0; i<toonWebtoonTue.length; i++) {
         var html = template(toonWebtoonTue[i]);
@@ -46,7 +46,7 @@ function initToonWebtoonTue(toonWebtoonTue) {
 
 function initToonWebtoonWed(toonWebtoonWed) {
     $('.toon-webtoon-wed').empty();
-    var template = require('../template/toon/toon-webtoon.hbs');
+    var template = require('../template/main/toon.hbs');
 
     for (var i=0; i<toonWebtoonWed.length; i++) {
         var html = template(toonWebtoonWed[i]);
@@ -57,7 +57,7 @@ function initToonWebtoonWed(toonWebtoonWed) {
 
 function initToonWebtoonThur(toonWebtoonThur) {
     $('.toon-webtoon-thur').empty();
-    var template = require('../template/toon/toon-webtoon.hbs');
+    var template = require('../template/main/toon.hbs');
 
     for (var i=0; i<toonWebtoonThur.length; i++) {
         var html = template(toonWebtoonThur[i]);
@@ -68,7 +68,7 @@ function initToonWebtoonThur(toonWebtoonThur) {
 
 function iniToonWebtoonFri(toonWebtoonFri) {
     $('.toon-webtoon-fri').empty();
-    var template = require('../template/toon/toon-webtoon.hbs');
+    var template = require('../template/main/toon.hbs');
 
     for (var i=0; i<toonWebtoonfri.length; i++) {
         var html = template(toonWebtoonfri[i]);
@@ -79,7 +79,7 @@ function iniToonWebtoonFri(toonWebtoonFri) {
 
 function initToonWebtoonSat(toonWebtoonSat) {
     $('.toon-webtoon-sat').empty();
-    var template = require('../template/toon/toon-webtoon.hbs');
+    var template = require('../template/main/toon.hbs');
 
     for (var i=0; i<toonWebtoonSat.length; i++) {
         var html = template(toonWebtoonSat[i]);
@@ -90,7 +90,7 @@ function initToonWebtoonSat(toonWebtoonSat) {
 
 function initToonWebtoonSun(toonWebtoonSun) {
     $('.toon-webtoon-sun').empty();
-    var template = require('../template/toon/toon-webtoon.hbs');
+    var template = require('../template/main/toon.hbs');
 
     for (var i=0; i<toonWebtoonSun.length; i++) {
         var html = template(toonWebtoonSun[i]);

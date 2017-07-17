@@ -15,10 +15,11 @@ $('.sub-menu > li').on('click', function () {
     $(subNavContents[subNavIndex]).addClass('active');
     */
 
-    var toonId = $(this).attr('toon-id');
+    var id = $(this).attr('id');
 
     $('.sub-contents-toon').hide();
-    $('.' + toonId).show();
+    $('.' + id).show();
+
 });
 
 

@@ -6,15 +6,9 @@
         </div>
         <ul class="list-text">
             <li class="list-title">
-                {{#if up}}
-                <img class="badge-up" src="./img/badge-up.png">
-                {{/if}}
-                {{#if new}}
-                <img class="badge-new" src="./img/badge-new.png">
-                {{/if}}
-                {{#if agelimit}}
-                <img class="age-grade" src="./img/age-grade-15.png">
-                {{/if}}
+                {{#each badge}}
+                <img class="badge-{{this}}" src="./img/badge-{{this}}.png">
+                {{/each}}
                 {{title}}
             </li>
             <li class="list-summary">

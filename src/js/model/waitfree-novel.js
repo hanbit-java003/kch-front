@@ -10,19 +10,19 @@ module.exports = [{
     views: '14.3',
     writer: '플루토스',
     img: './img/waitfree-novel2.png',
-    new: true
+    badge: ['new']
 }, {
     title: '헬무트 [독점 연재]',
     summary: '마물의 숲에 버려진 아이',
     views: '12.1',
     writer: '혼요',
     img: './img/waitfree-novel3.png',
-    new: true
+    badge: ['new']
 }, {
     title: '독을 품은 꽃 [단독선공개]',
     summary: '당신, 복수할 거야',
     views: '9.1',
     writer: '김혜지',
     img: './img/waitfree-novel4.png',
-    new: true
+    badge: ['new']
 }];

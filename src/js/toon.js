@@ -13,7 +13,7 @@ var toonAction = require('./model/toon/toon-action');
 
 function initToonWaitFree(toonWaitFree) {
     $('.toon-waitfree').empty();
-    var template = require('../template/toon/toon-waitfree.hbs');
+    var template = require('../template/main/waitfree.hbs');
 
     for (var i=0; i<toonWaitFree.length; i++) {
         var html = template(toonWaitFree[i]);
@@ -24,7 +24,7 @@ function initToonWaitFree(toonWaitFree) {
 
 function initToonRomance(toonRomance) {
     $('.toon-romance').empty();
-    var template = require('../template/toon/toon-romance.hbs');
+    var template = require('../template/main/toon.hbs');
 
     for (var i=0; i<toonRomance.length; i++) {
         var html = template(toonRomance[i]);
@@ -35,7 +35,7 @@ function initToonRomance(toonRomance) {
 
 function initToonBoy(toonBoy) {
     $('.toon-boy').empty();
-    var template = require('../template/toon/toon-boy.hbs');
+    var template = require('../template/main/toon.hbs');
 
     for (var i=0; i<toonBoy.length; i++) {
         var html = template(toonBoy[i]);
@@ -46,7 +46,7 @@ function initToonBoy(toonBoy) {
 
 function initToonDrama(toonDrama) {
     $('.toon-drama').empty();
-    var template = require('../template/toon/toon-drama.hbs');
+    var template = require('../template/main/toon.hbs');
 
     for (var i=0; i<toonDrama.length; i++) {
         var html = template(toonDrama[i]);
@@ -57,7 +57,7 @@ function initToonDrama(toonDrama) {
 
 function initToonAction(toonAction) {
     $('.toon-action').empty();
-    var template = require('../template/toon/toon-action.hbs');
+    var template = require('../template/main/toon.hbs');
 
     for (var i=0; i<toonAction.length; i++) {
         var html = template(toonAction[i]);

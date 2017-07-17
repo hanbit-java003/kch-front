@@ -2,21 +2,18 @@
     <div class="list">
         <div class="list-img">
             <img class="list-title-img" src="{{img}}">
-            {{#if kakaonovel}}
-            <img class="badge-kakao-novel" src="./img/badge-kakao-novel.png">
+            {{~#if time}}
+            <img class="badge-time" src="./img/badge-time.png">
             {{/if}}
+            {{~#if kakao~}}
+            <img class="badge-kakaonovel" src="./img/badge-kakaonovel.png">
+            {{~/if~}}
         </div>
         <ul class="list-text">
             <li class="list-title">
-                {{#if up}}
-                <img class="badge-up" src="./img/badge-up.png">
-                {{/if}}
-                {{#if new}}
-                <img class="badge-new" src="./img/badge-new.png">
-                {{/if}}
-                {{#if agelimit}}
-                <img class="age-grade" src="./img/age-grade-15.png">
-                {{/if}}
+                {{#each badge}}
+                <img class="badge-{{this}}" src="./img/badge-{{this}}.png">
+                {{/each}}
                 {{title}}
             </li>
             <li class="list-summary">

@@ -10,7 +10,7 @@ var bestNovel = require('./model/best-novel');
 
 function initWaitFreeToon(waitFreeToon) {
     $('.waitfree-toon').empty();
-    var template = require('../template/main/waitfree-toon.hbs');
+    var template = require('../template/main/waitfree.hbs');
 
     for (var i=0; i<waitFreeToon.length; i++) {
         var html = template(waitFreeToon[i]);
@@ -21,7 +21,7 @@ function initWaitFreeToon(waitFreeToon) {
 
 function initBestToon(bestToon) {
     $('.best-toon').empty();
-    var template = require('../template/main/best-toon.hbs');
+    var template = require('../template/main/toon.hbs');
 
     for (var i=0; i<bestToon.length; i++) {
         var html = template(bestToon[i]);
@@ -32,7 +32,7 @@ function initBestToon(bestToon) {
 
 function initWaitFreeNovel(waitFreeNovel) {
     $('.waitfree-novel').empty();
-    var template = require('../template/main/waitfree-novel.hbs');
+    var template = require('../template/main/waitfree.hbs');
 
     for (i=0; i<waitFreeNovel.length; i++) {
         var html = template(waitFreeNovel[i]);
@@ -43,7 +43,7 @@ function initWaitFreeNovel(waitFreeNovel) {
 
 function initBestNovel(bestNovel) {
     $('.best-novel').empty();
-    var template = require('../template/main/best-novel.hbs');
+    var template = require('../template/main/novel.hbs');
 
     for (i=0; i<bestNovel.length; i++) {
         var html = template(bestNovel[i]);

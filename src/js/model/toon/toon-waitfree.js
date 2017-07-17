@@ -22,7 +22,7 @@ module.exports = [{
     views: '372.6',
     writer: '웹툰 김명미, 원작 정경윤',
     img: './img/toon/waitfree/waitfree04.png',
-    up: true
+    badge: ['up']
 }, {
     title: '이세계의 황비 [독점연재]',
     summary: '달콤살벌 이세계 서바이벌 로맨스!',

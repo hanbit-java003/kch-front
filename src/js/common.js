@@ -55,4 +55,3 @@ $('.header-account').on('click', function () { // side-bar
         }
     });
 });
-

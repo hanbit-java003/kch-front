@@ -17,6 +17,5 @@ module.exports = [{
     views: '4.5',
     writer: '양은지',
     img: './img/toon/drama/recommend03.png',
-    up: true,
-    agelimit: true
+    badge: ['up', 'age15']
 }];
