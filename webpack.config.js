@@ -19,6 +19,9 @@ const pages = [{
 }, {
     html: 'novel',
     script: 'novel',
+}, {
+    html: 'literature',
+    script: 'literature',
 }];
 
 module.exports = {

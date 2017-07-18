@@ -1,0 +1,24 @@
+<li>
+    <div class="list">
+        <div class="list-img">
+            <img class="list-title-img" src="{{img}}">
+            {{~#if time}}
+                <img class="badge-time" src="./img/badge-time.png">
+            {{/if}}
+        </div>
+        <ul class="list-text">
+            <li class="list-title">
+                {{#each badge}}
+                    <img class="badge-{{this}}" src="./img/badge-{{this}}.png">
+                {{/each}}
+                {{title}}
+            </li>
+            <li class="list-summary">
+                {{summary}}
+            </li>
+            <li class="list-info">
+                {{views}}만 · {{writer}}
+            </li>
+        </ul>
+    </div>
+</li>
