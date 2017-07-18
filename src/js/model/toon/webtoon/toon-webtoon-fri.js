@@ -19,7 +19,7 @@ module.exports = [{
     summary: '신생 아이돌그룹 ROSE의 무대 뒤, 은밀한 비밀!',
     views: '64.2',
     writer: '이소록',
-    img: './img/toon/webtoon/fri05.png',
+    img: './img/toon/webtoon/fri03.png',
     kakao: true,
     badge: ['up']
 }, {

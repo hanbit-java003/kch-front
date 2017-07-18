@@ -18,7 +18,7 @@ var toonWebtoonMon = require('./model/toon/webtoon/toon-webtoon-mon');
 var toonWebtoonTue = require('./model/toon/webtoon/toon-webtoon-tue');
 var toonWebtoonWed = require('./model/toon/webtoon/toon-webtoon-wed');
 var toonWebtoonThur = require('./model/toon/webtoon/toon-webtoon-thur');
-var toonWebtoonfri = require('./model/toon/webtoon/toon-webtoon-fri');
+var toonWebtoonFri = require('./model/toon/webtoon/toon-webtoon-fri');
 var toonWebtoonSat = require('./model/toon/webtoon/toon-webtoon-sat');
 var toonWebtoonSun = require('./model/toon/webtoon/toon-webtoon-sun');
 
@@ -70,8 +70,8 @@ function iniToonWebtoonFri(toonWebtoonFri) {
     $('.toon-webtoon-fri').empty();
     var template = require('../template/main/toon.hbs');
 
-    for (var i=0; i<toonWebtoonfri.length; i++) {
-        var html = template(toonWebtoonfri[i]);
+    for (var i=0; i<toonWebtoonFri.length; i++) {
+        var html = template(toonWebtoonFri[i]);
 
         $('.toon-webtoon-fri').append(html);
     }
@@ -103,6 +103,6 @@ initToonWebtoonMon(toonWebtoonMon);
 initToonWebtoonTue(toonWebtoonTue);
 initToonWebtoonWed(toonWebtoonWed);
 initToonWebtoonThur(toonWebtoonThur);
-iniToonWebtoonFri(toonWebtoonfri);
+iniToonWebtoonFri(toonWebtoonFri);
 initToonWebtoonSat(toonWebtoonSat);
 initToonWebtoonSun(toonWebtoonSun);

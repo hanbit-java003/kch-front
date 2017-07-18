@@ -99,7 +99,6 @@ function initNovelWebnovelSun(novelWebnovelSun) {
     }
 }
 
-
 initNovelWebnovelMon(novelWebnovelMon);
 initNovelWebnovelTue(novelWebnovelTue);
 initNovelWebnovelWed(novelWebnovelWed);

@@ -20,6 +20,9 @@ $('.sub-menu > li').on('click', function () {
     $('.sub-contents-toon').hide();
     $('.' + id).show();
 
+    $('.sub-contents-novel').hide();
+    $('.' + id).show();
+
 });
 
 
