@@ -23,6 +23,9 @@ $('.sub-menu > li').on('click', function () {
     $('.sub-contents-novel').hide();
     $('.' + id).show();
 
+    $('.sub-contents-literature').hide();
+    $('.' + id).show();
+
 });
 
 
