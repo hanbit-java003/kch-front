@@ -22,6 +22,9 @@ const pages = [{
 }, {
     html: 'literature',
     script: 'literature',
+}, {
+    html: 'tag',
+    script: 'tag',
 }];
 
 module.exports = {
