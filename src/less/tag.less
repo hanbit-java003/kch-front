@@ -1,17 +1,144 @@
 @import "common.less";
 
-.collection-box {
+.tag-box {
   margin-top: 15px;
-  padding: 15px 15px 0 15px;
+  padding: 15px 15px 5px 15px;
   background-color: #303030;
 }
 
-.collection-box-title {
-  padding: 10px 0;
+.tag-box-title {
+  padding-bottom: 10px;
   color: #9b9b9b;
   font-size: 19px;
 }
 
-.collection-list > li {
+.tag-list {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.tag-list > li {
   display: inline-block;
+  margin: 0 15px 15px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.collection-box {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+.age-nav {
+  height: 60px;
+  border-bottom: solid 1px #e8e8e8;
+  color: #bdbdbd;
+  font-size: 21px;
+}
+
+.age-nav > li {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  padding: 15px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.age-nav > li.active {
+  color: #1e1e1e;
+}
+
+.age-nav > li .line {
+  position: absolute;
+  display: none;
+  width: 50%;
+  height: 3px;
+  left: 25%;
+  bottom: 0;
+  background-color: #448aff;
+}
+
+.age-nav > li span.active {
+  display: block;
+}
+
+.gender-nav {
+  height: 60px;
+  color: #bdbdbd;
+  font-size: 21px;
+  text-align: center;
+}
+
+.gender-nav > li {
+  position: relative;
+  display: inline-block;
+  width: calc(100% / 6);
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.fa-check {
+  position: absolute;
+  display: none;
+  top: 20px;
+  left: 15px;
+  font-size: 20px;
+}
+
+.fa-check.active {
+  display: block;
+}
+
+.gender-nav > li.active {
+  color: #448aff;
+}
+
+.collection-main {
+  padding: 0 15px;
+}
+
+.collection-list {
+  position: relative;
+  height: 200px;
+  padding: 15px 0;
+  border-bottom: solid 1px #e8e8e8;
+  font-size: 19px;
+}
+
+@collection-img-width: 126px;
+
+.collection-title {
+  margin-right: @collection-img-width;
+  padding-top: 10px;
+  color: #1e1e1e;
+}
+
+.collection-icon {
+  margin-right: @collection-img-width;
+  padding: 8px 0 10px 0;
+  color: #bdbdbd;
+}
+
+.collection-icon > i {
+  font-size: 20px;
+}
+
+.collection-icon > span {
+  padding: 0 20px 0 5px;
+}
+
+.collection-img {
+  position: relative;
+  float: right;
+  width: @collection-img-width;
+
+}
+
+.collection-img img {
+  width: @collection-img-width;
 }

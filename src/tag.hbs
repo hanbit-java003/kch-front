@@ -7,25 +7,83 @@
 <body>
 {{> template/header tag="true" }}
 <div class="sub-contents">
-    <div class="collection-box">
-        <div class="collection-box-title">
-            오늘 좀 자극적인 게 필요해!
+    <section class="tag-box">
+        <div class="tag-box-title">
+            판타지 한 번 시작해볼래요?
         </div>
-        <ul class="collection-list">
+        <ul class="tag-list">
             <li style="background-color: #b567bc">
-                #아슬아슬_짜릿한_남장여자
+                #판타지_입문작_추천
             </li>
             <li style="background-color: #e96161">
-                #까짓거_해봅시다_계약연예
-            </li>
-            <li style="background-color: #69ac52">
-                #긴장감_쩌는_스릴러
+                #동양을_배경으로_하는_판타지
             </li>
             <li style="background-color: #757ec0">
-                #좀비는_언제봐도신선하다
+                #미래도시_배경인_작품모음
+            </li>
+            <li style="background-color: #e79f42">
+                #남녀의_몸이_바뀐다면
             </li>
         </ul>
-    </div>
+    </section>
+    <section class="collection-box">
+        <ul class="age-nav">
+            <li age-Id="age-all" class="active">
+                전체
+                <span class="line age-all active"></span>
+            </li>
+            <li age-Id="teenager">
+                10대
+                <span class="line teenager"></span>
+            </li>
+            <li age-Id="twentys">
+                20대
+                <span class="line twentys"></span>
+            </li>
+            <li age-Id="thirtys">
+                30대
+                <span class="line thirtys"></span>
+            </li>
+            <li age-Id="over-fourtys">
+                40대+
+                <span class="line over-fourtys"></span>
+            </li>
+        </ul>
+        <ul class="gender-nav">
+            <li gender-Id="gender-all" class="active">
+                <i class="fa fa-check gender-all active"></i>
+                전체
+            </li>
+            <li gender-Id="male">
+                <i class="fa fa-check male"></i>
+                남자
+            </li>
+            <li gender-Id="female">
+                <i class="fa fa-check female"></i>
+                여자
+            </li>
+        </ul>
+        <ul class="collection-main">
+            <li class="collection-list">
+                <div class="collection-title">
+                    #100만명이봤다_명예의전당
+                </div>
+                <div class="collection-icon">
+                    <i class="fa fa-commenting-o"></i>
+                    <span class="collection-reply">1,815</span>
+                    <i class="fa fa-heart-o"></i>
+                    <span class="collection-like">3,407</span>
+                </div>
+                <div class="collection-img">
+                    <img src="./img/tag/tag01.png">
+                    <div>42</div>
+                </div>
+            </li>
+        </ul>
+    </section>
+</div>
+<div class="appdownload">
+    <img src="./img/appDownload.png">
 </div>
 {{> template/footer }}
 </body>
